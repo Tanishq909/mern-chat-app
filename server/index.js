@@ -18,6 +18,10 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/',Route);
 
+app.get('/',(req,res) => {
+    res.send('Welcome to Chat Application');
+});
+
 Connection();             
 
 const expressServer = app.listen(PORT,() => {
