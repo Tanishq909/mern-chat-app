@@ -49,8 +49,8 @@ const Messages = ({ person , conversation }) => {
             let data = await getMessages(conversation._id);
             setMessages(data);
         }
-        if (conversation && conversation._id) getMessageDetails();
-        // conversation._id && getMessageDetails();
+        // if (conversation && conversation._id) getMessageDetails();
+        conversation._id && getMessageDetails();
     },[person._id,conversation._id,newMessageFlag]);
 
     useEffect(() => {
@@ -63,7 +63,6 @@ const Messages = ({ person , conversation }) => {
     },[incomingMessage,conversation]);
 
     const sendText = async (e) => {
-        // console.log(e);
         const code = e.keyCode || e.which;
         if(code === 13) { //13 is the enter e.which
             let message = {};
