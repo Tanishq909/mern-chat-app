@@ -1,4 +1,4 @@
-# mern-chat-app
+### Description
 A full-stack chat application built with the MERN stack, featuring real-time messaging, user authentication, media upload/download, and responsive design.
 
 
@@ -57,3 +57,13 @@ A full-stack chat application built with the MERN stack, featuring real-time mes
 5. Open your browser and navigate to `http://localhost:5173` to see the application in action.
 
 ## Project Structure
+
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
