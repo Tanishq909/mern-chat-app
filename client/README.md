@@ -53,9 +53,6 @@ This is the frontend part of the MERN Chat App, built using React, Vite, and Mat
 
 6. Open your browser and navigate to `http://localhost:5173` to see the application in action.
 
-## Project Structure
-client/ .env .gitignore eslint.config.js index.css index.html package.json public/ README.md src/ App.css App.jsx components/ constants/ context/ index.css main.jsx service/ utils/ vite.config.js
-
 
 
 ## Contributing
