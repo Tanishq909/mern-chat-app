@@ -13,7 +13,10 @@ const app = express();
 
 const PORT = 8080;
 
-app.use(cors()); //allows transfer data from localhost 5173 to 8080 as our browser don't support it.
+app.use(cors({
+    origin: process.env.CLIENT_URL// frontend url
+},)); //allows transfer data from localhost 5173 to 8080 as our browser don't support it.
+
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/',Route);
