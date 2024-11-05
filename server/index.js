@@ -14,7 +14,9 @@ const app = express();
 const PORT = 8080;
 
 app.use(cors({
-    origin: process.env.CLIENT_URL// frontend url
+    origin: process.env.CLIENT_URL,  // frontend url
+    methods: ["GET", "POST"],
+    credentials: true
 },)); //allows transfer data from localhost 5173 to 8080 as our browser don't support it.
 
 app.use(bodyParser.json({ extended: true }));
@@ -35,7 +37,11 @@ const expressServer = app.listen(PORT,() => {
 const io = new Server(expressServer, {
     cors: {
         origin: process.env.CLIENT_URL,  // frontend url
+        methods: ["GET", "POST"],
+        credentials: true
     },
+    pingTimeout: 60000,
+    transports: ['websocket']
 });
 
 
