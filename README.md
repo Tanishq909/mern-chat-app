@@ -134,23 +134,25 @@ Create .env in server directory :
 
 ## Project Structure
 The project is divided into two main parts: client (frontend) and server (backend). Below is the directory structure:
-### Client
-client/ <br>
-  ├── public/                  <br>
-  ├── src/                      <br>
-  │   ├── components/           <br>
-  │   ├── context/             <br>
-  │   ├── service/           <br>
-  │   └── utils/           <br>
-  └── package.json          <br>
+```sh
+mern-chat-app/
+├── client/                     # Frontend React application
+│   ├── public/                 # Public assets
+│   ├── src/                   # Source files
+│   │   ├── components/        # React components
+│   │   ├── context/          # React context providers
+│   │   ├── service/          # API service layer
+│   │   ├── utils/           # Utility functions
+│   └── package.json         # Dependencies and scripts
+│
+├── server/                  # Backend Node.js application
+│   ├── controller/         # Route controllers
+│   ├── model/             # Database models
+│   ├── routes/            # API routes
+│   ├── utils/             # Utility functions
+└── └── package.json      # Dependencies and scripts
 
-### Server
-server/ <br>
-  ├── controller/           <br>
-  ├── model/               <br>
-  ├── routes/              <br>
-  ├── utils/                <br>
-  └── package.json          <br>
+```
 
 ## Contributing
 
