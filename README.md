@@ -1,7 +1,7 @@
 # MERN Chat App
 A real-time chat application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables instant messaging, file sharing, and user authentication.
 
-![WhatsApp Clone](https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png)
+
 
 ## Table of Contents
 - [Description](#description)
