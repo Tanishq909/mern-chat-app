@@ -48,7 +48,7 @@ A feature-rich chat application that provides real-time messaging capabilities, 
 - GridFS for file storage
 - JWT for authentication
 
-##Mixed
+## Mixed
 - **Frontend**: React, Vite, Material-UI
 - **Backend**: Node.js, Express, MongoDB, Mongoose
 - **Real-time Communication**: Socket.IO
